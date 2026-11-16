@@ -1,0 +1,31 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; background: #faf8f3; color: #263b2e; line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+.site-header { min-height: 76px; padding: 16px 7%; background: white; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.logo { font-size: 27px; font-weight: bold; color: #254d38; }
+.logo span { color: #c58b52; }
+nav { display: flex; gap: 25px; flex-wrap: wrap; }
+nav a:hover, nav a.current { color: #b57942; }
+.hero { display: flex; align-items: center; gap: 45px; padding: 70px 7%; background: #eee9dc; }
+.hero-text { flex: 1; }
+.hero img { width: 48%; height: 340px; object-fit: cover; border-radius: 12px; }
+.eyebrow { color: #a46e3c; font-size: 12px; font-weight: bold; letter-spacing: 2px; margin-bottom: 12px; }
+h1 { font-size: clamp(38px, 5vw, 60px); line-height: 1.12; margin-bottom: 18px; }
+.hero-text > p:not(.eyebrow) { color: #626b62; max-width: 430px; margin-bottom: 25px; }
+.button { display: inline-block; background: #254d38; color: white; padding: 12px 22px; border-radius: 5px; }
+.button:hover { background: #3a6b4d; }
+.welcome { text-align: center; padding: 60px 7%; }
+h2 { font-size: 30px; margin-bottom: 12px; }
+.welcome > p:not(.eyebrow) { color: #6d756d; max-width: 620px; margin: auto; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 35px; text-align: left; }
+.feature-grid article { padding: 25px; background: white; border: 1px solid #e8e5dc; border-radius: 9px; }
+.feature-grid span { color: #b57942; font-weight: bold; }
+.feature-grid h3 { margin: 8px 0; }
+.feature-grid p { color: #6d756d; }
+footer { padding: 22px 7%; text-align: center; color: #dce4dc; background: #1e3529; }
+@media (max-width: 700px) { .site-header { flex-direction: column; } .hero { flex-direction: column; align-items: stretch; } .hero img { width: 100%; height: 250px; } .feature-grid { grid-template-columns: 1fr; } }

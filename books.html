@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenShelf | Books</title>
+    <link rel="stylesheet" href="books.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <a class="logo" href="index.html">OpenShelf<span>.</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a class="current" href="books.html">Books</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<main class="page">
+    <p class="eyebrow">OUR COLLECTION</p>
+    <h1>Explore Books</h1>
+    <p class="intro">Search by title or author, or select a category.</p>
+
+    <div class="tools">
+        <input type="search" id="searchInput" placeholder="Search books or authors..." aria-label="Search books">
+        <div class="filters">
+            <button class="active" data-category="All">All</button>
+            <button data-category="Fiction">Fiction</button>
+            <button data-category="Science">Science</button>
+            <button data-category="History">History</button>
+            <button data-category="Philosophy">Philosophy</button>
+        </div>
+    </div>
+
+    <section class="book-grid" id="bookGrid">
+        <article class="book-card" data-category="Fiction">
+            <img src="https://covers.openlibrary.org/b/id/8231856-L.jpg" alt="Pride and Prejudice book cover">
+            <div><span>FICTION</span><h2>Pride and Prejudice</h2><p>Jane Austen</p><a href="https://www.gutenberg.org/ebooks/1342" target="_blank" rel="noopener noreferrer">Read Book ↗</a></div>
+        </article>
+        <article class="book-card" data-category="Fiction">
+            <img src="https://covers.openlibrary.org/b/id/10521270-L.jpg" alt="Alice's Adventures in Wonderland book cover">
+            <div><span>FICTION</span><h2>Alice's Adventures in Wonderland</h2><p>Lewis Carroll</p><a href="https://www.gutenberg.org/ebooks/11" target="_blank" rel="noopener noreferrer">Read Book ↗</a></div>
+        </article>
+        <article class="book-card" data-category="Fiction">
+            <img src="https://covers.openlibrary.org/b/id/10523338-L.jpg" alt="The Adventures of Sherlock Holmes book cover">
+            <div><span>FICTION</span><h2>The Adventures of Sherlock Holmes</h2><p>Arthur Conan Doyle</p><a href="https://www.gutenberg.org/ebooks/1661" target="_blank" rel="noopener noreferrer">Read Book ↗</a></div>
+        </article>
+        <article class="book-card" data-category="Philosophy">
+            <img src="https://covers.openlibrary.org/b/id/8231996-L.jpg" alt="Meditations book cover">
+            <div><span>PHILOSOPHY</span><h2>Meditations</h2><p>Marcus Aurelius</p><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener noreferrer">Read Book ↗</a></div>
+        </article>
+        <article class="book-card" data-category="Science">
+            <img src="https://covers.openlibrary.org/b/id/240726-L.jpg" alt="A Brief History of Time book cover">
+            <div><span>SCIENCE</span><h2>A Brief History of Time</h2><p>Stephen Hawking</p><a href="https://openlibrary.org/search?q=A+Brief+History+of+Time" target="_blank" rel="noopener noreferrer">Find Book ↗</a></div>
+        </article>
+        <article class="book-card" data-category="History">
+            <img src="https://covers.openlibrary.org/b/id/8231857-L.jpg" alt="The Art of War book cover">
+            <div><span>HISTORY</span><h2>The Art of War</h2><p>Sun Tzu</p><a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener noreferrer">Read Book ↗</a></div>
+        </article>
+    </section>
+    <p id="noResults" hidden>No books found. Try another search or category.</p>
+</main>
+
+<footer><p>© 2026 OpenShelf. Read, learn and grow.</p></footer>
+</body>
+</html>

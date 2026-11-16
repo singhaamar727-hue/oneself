@@ -1,0 +1,20 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #faf8f3; color: #293b31; line-height: 1.7; }
+a { color: inherit; text-decoration: none; }
+.site-header { padding: 17px 7%; background: white; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.logo { font-size: 27px; font-weight: bold; color: #254d38; }
+.logo span { color: #c58b52; }
+nav { display: flex; gap: 25px; flex-wrap: wrap; }
+nav a:hover, nav a.current { color: #b57942; }
+.about-hero { padding: 75px 7%; text-align: center; background: #e8eee8; }
+.eyebrow { color: #a46e3c; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
+h1 { font-size: clamp(35px, 5vw, 52px); margin: 12px 0; }
+.about-hero > p:last-child { max-width: 650px; margin: auto; color: #647067; }
+.about-content { max-width: 900px; margin: 45px auto; padding: 0 25px; }
+.about-content > div { padding: 25px 0; border-bottom: 1px solid #e1e3dc; }
+h2 { color: #315941; margin-bottom: 10px; }
+.about-content p, .about-content li { color: #626d64; }
+.about-content ol { padding-left: 22px; }
+.note { background: #f0eadf; padding: 22px !important; border: 0 !important; border-radius: 8px; margin-top: 25px; }
+footer { padding: 22px 7%; text-align: center; color: #dce4dc; background: #1e3529; }
+@media (max-width: 650px) { .site-header { flex-direction: column; } .about-hero { padding: 50px 6%; } }
